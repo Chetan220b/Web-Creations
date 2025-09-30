@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs for 2024</h1>
+    </section>
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Our Certificate & Online Programs for 2024</h2>
+                <p>Our university continues to expand its online learning options, making education more accessible for students worldwide. With a wide choice of certificate programs in fields like Business Analytics, Data Science, and Machine Learning, students can upgrade their skills from anywhere.</p><br>
+                <p>In 2024, our online platform integrates interactive learning modules, expert faculty guidance, and hands-on projects. Every program is designed to meet industry requirements while providing academic rigor and support throughout the learning journey.</p><br>
+                <p>Graduates from our online certificate programs gain recognized credentials that strengthen their professional profiles, open up new career opportunities, and offer flexible learning schedules that fit busy lives.</p><br>
+                <p>Recent feedback from alumni highlights how certificate programs in Computer Science and AutoCAD have helped them secure jobs in top companies. The virtual classroom experience, combined with collaborative discussion forums, ensures students remain connected and engaged.</p>
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>32</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>40</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Dedicated to educational excellence, our university offers dynamic online and certificate programs to help students stay ahead of changing career trends and technological advances.<br> Explore our resources, learn from the best, and prepare for success in a digital world.</p>
+        <!---------<div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+           <i class="fa fa-linkedin"></i>
+           <a href="https://www.linkedin.com/in/chetandivate2208" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>------->
+
+        <div class="icons">
+    <a href="https://www.facebook.com/FACEBOOK_PROFILE">
+        <i class="fa fa-facebook"></i>
+    </a>
+    <a href="https://twitter.com/TWITTER_HANDLE">
+        <i class="fa fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/chetan_220b">
+        <i class="fa fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/chetandivate2208">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    </div>
+
+
+
+        
+    <p>Made with <i class="fa fa-heart-o"></i> by Chetan Divate.</p>
+    </section>
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

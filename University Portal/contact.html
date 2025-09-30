@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<bod>
+    <!-----------------Header------------------->
+    <section class="sub-header">
+        <nav >
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!-----------------------Contact Page Content----------------------------->
+    <section class="location">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.0344739699!2d73.86296739999999!3d18.52461645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1757436558884!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Pune, Maharashtra, India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 98745 63211</h5>
+                        <p>Mon - Sat, 10:00am - 6:00pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>university@gmail.com</h5>
+                        <p>Email us your queries any time</p>
+                    </span>
+                </div>
+            </div>
+            <section class="contact-col">
+                <form action="form-handler.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="Message" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+                </form>
+            </section>
+        </div>
+    </section>
+
+   <!----------------------Footer------------------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Our university is devoted to fostering quality education, innovation, and community engagement. <br>We provide students with a supportive learning environment designed to nurture academic growth and prepare them for meaningful careers.</p>
+
+      <div class="icons">
+                    <a href="https://www.facebook.com/FACEBOOK_PROFILE">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/TWITTER_HANDLE">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/chetan_220b">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chetandivate2208">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Chetan Divate.</p>
+    </section>
+
+
+
+    <!----------------------JavaScript for Toggle Menu------------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

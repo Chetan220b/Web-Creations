@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!-- Courses -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Explore a diverse range of academic programs designed for ambitious learners, focusing on both theoretical and practical excellence.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Our intermediate courses, including Science, Commerce, and Arts streams, provide a solid foundation for higher education and professional preparation, with experienced faculty guiding each step.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>We offer undergraduate degrees such as B.Sc, B.Com, B.A., and B.Tech, combining academic rigor with practical skills, modern laboratories, and active industry partnerships.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Our postgraduate programs, including M.Sc, M.A., MBA, and M.Tech, are designed for in-depth specialization, research opportunities, and to foster leadership for tomorrow’s careers.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Facilities -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We support student growth with top-tier facilities across campus, ensuring the best resources for both learning and personal development.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>Our spacious library offers thousands of books, access to online journals, and comfortable study areas for students, fostering a culture of focused learning.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>The playground invites students to participate in sports like cricket, football, and basketball, encouraging teamwork and fitness in a vibrant setting.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>The campus canteen serves a variety of delicious and nutritious meals, offering a comfortable spot to relax and share time with friends between classes.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Our university is committed to delivering world-class education and fostering innovation. <br>We empower students to become thoughtful leaders by providing a rich academic environment, modern facilities, and dedicated support.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/FACEBOOK_PROFILE">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/TWITTER_HANDLE">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/chetan_220b">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/chetandivate2208">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Chetan Divate.</p>
+    </section>
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
